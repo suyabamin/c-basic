@@ -8,14 +8,13 @@ struct person
   int month;
   int year;
   
-  void setName(string Name){
-    name=Name;
-  }
-  void setDOB(int Day,int Month,int Year){
-    day=Day;
-    month=Month;
-    year=Year;
-  }
+ person(string Name,int Day,int Month,int Year){
+     name=Name;
+     day=Day;
+     month=Month;
+     year=Year;
+
+ }
 
   void printName(){
     cout<<"my name is "<<name<<endl;
@@ -28,16 +27,16 @@ struct person
 
 
 int main(){
-    person person1;
-    person1.setName("sunny");
-    person1.setDOB(1,2,200);
-    person1.printName();
-    person1.printDOB();  
+    person person1("suyab amin sunny",7,11,2003);
 
-    person person2;
-    person2.setName("sa");
-    person2.setDOB(1,2,2001);
+    person1.printName();
+    person1.printDOB();
+
+
+     person person2("su",14,1,2004);
+
     person2.printName();
     person2.printDOB();
+   
 
 }

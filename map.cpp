@@ -9,7 +9,7 @@ fruits ["mango"]=10;//insert
 //change the count of apple to 7
 fruits ["apple"]=7;
 //print the map
-for (auto i=fruits.begin();i!=fruits.end();i++) {
+for (auto i=fruits.begin();i!=fruits.end();i++) {       //auto means =automaticaly defind map data type;
 cout<<i->first<<":"<<i->second<<endl;
 }
 //add 4 more mangoes
